@@ -28,55 +28,55 @@ The goal is to recognize faces in real-time through a webcam. You can also train
 
 1. **Clone or Download** this repository by run this code in your terminal.
 
-```bash
-git clone https://github.com/dindatsme/WorkshopCV_Face_Detection_and_Recognition.git
-cd 'WorkshopCV_Face_Detection_and_Recognition'
-```
+    ```bash
+    git clone https://github.com/dindatsme/WorkshopCV_Face_Detection_and_Recognition.git
+    cd 'WorkshopCV_Face_Detection_and_Recognition'
+    ```
 
 2. **(Optional)** Create and activate a virtual environment.
 
-```bash
-python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-
-# macOS/Linux
-source .venv/bin/activate
-```
+    ```bash
+    python -m venv .venv
+    
+    # Windows
+    .venv\Scripts\activate
+    
+    # macOS/Linux
+    source .venv/bin/activate
+    ```
 
 3. **Install Dependencies.**
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. **(Optional)** Add your own face images.
 
-- Add your face images inside `images/your_name/`
-- Make sure each subfolder in `images/` is named after the person, containing their face pictures.
+    - Add your face images inside `images/your_name/`
+    - Make sure each subfolder in `images/` is named after the person, containing their face pictures.
 
 5. **Train the Model.**
 
-run this if you added new face dataset
-
-```bash
-python train_model.py
-```
-
-This will generate or update `eigenface_pipeline.pkl`.
+    Run this if you added new face dataset
+    
+    ```bash
+    python train_model.py
+    ```
+    
+    This will generate or update `eigenface_pipeline.pkl`.
 
 6. **Run Real-time Face Recognition.**
 
-```bash
-python realtime_webcam.py
-```
-
-Press `q` on the webcam window to exit.
+    ```bash
+    python realtime_webcam.py
+    ```
+    
+    Press `q` on the webcam window to exit.
 
 7. **Check Results.**
 
-- The example of recorded video and screenshot face recognition results can be seen inside the `result/` folder.
+    - The example of recorded video and screenshot of face recognition results can be seen inside the `result/` folder.
 
 ---
 
@@ -93,7 +93,7 @@ Press `q` on the webcam window to exit.
   ```bash
   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
   ```
-  then, you need to set it back by running:
+  After everything have finished, you need to set it back by running:
 
   ```bash
   Set-ExecutionPolicy Restricted -Scope CurrentUser
